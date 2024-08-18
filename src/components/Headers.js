@@ -101,7 +101,9 @@ const Header = ({ isAuthenticated, setIsAuthenticated }) => {
             ) : (
               <>
                 <button onClick={NavigateRegister} className="text-gray-600 hover:text-gray-900 px-3 py-2">Register</button>
-                <button onClick={NavigateLogin} className="text-gray-600 hover:text-gray-900 px-3 py-2">Login</button>
+                <div className="flex-row mr-14">
+                    <button onClick={NavigateLogin} className="text-gray-600 hover:text-gray-900 px-3 py-2">Войти</button>
+                </div>
               </>
             )}
             <button className="text-gray-600 hover:text-gray-900 px-3 py-2" onClick={toggleMenu}>
